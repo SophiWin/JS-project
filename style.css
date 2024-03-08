@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: url("https://media.istockphoto.com/id/1127117873/vector/morning-to-do-list.jpg?s=612x612&w=0&k=20&c=DT6kYRzCisHkaT7kiOSl66OKzRu__QC-4lbY8FOCyIM=")
+    no-repeat;
+  background-size: cover;
+}
+.container {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRufIdAHAWyeO3NX9arnqmteddWhxTlrfXByuvuhRoE3DJ7OeEUhiQzJtn7cL2XM8jraJs&usqp=CAUU");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 35vw;
+  width: 500px;
+  height: 500px;
+  margin: auto;
+}
+.header {
+  max-width: 500px;
+  background-color: goldenrod;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: auto;
+}
+.header h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+#date {
+  padding: 5px;
+  margin-bottom: 10px;
+  color: bisque;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-color: #edeef0;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 15px;
+}
+.row button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background: grey;
+  border-radius: 40px;
+}
+.tasks {
+  max-height: 350px;
+  overflow: auto;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.updateContainer {
+  display: none;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.inputContainer textarea {
+  padding: 5px;
+  margin: 10px 0;
+  font-size: 17px;
+  width: 360px;
+  border-radius: 5px;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  cursor: pointer;
+  font-size: large;
+}
+.actions .editBtn:hover {
+  color: grey;
+}
+.actions .deleteBtn:hover {
+  color: red;
+}
+.saveBtn,
+.cancelBtn {
+  padding: 7px;
+  color: #fff;
+  background-color: rgb(65, 65, 232);
+  border-radius: 5px;
+  border: none;
+}
+.saveBtn:hover,
+.cancelBtn:hover {
+  background-color: blue;
+}
